@@ -14,15 +14,15 @@ API REST para gerenciamento de academia com foco em cadastro de alunos, matrícu
 - Maven
 
 ## Estrutura do projeto
-- `src/main/java/dev/zenetodev/fightclub/config` configuração (OpenAPI)
-- `src/main/java/dev/zenetodev/fightclub/controller` endpoints REST
-- `src/main/java/dev/zenetodev/fightclub/service` regras de negócio
-- `src/main/java/dev/zenetodev/fightclub/repository` acesso a dados
-- `src/main/java/dev/zenetodev/fightclub/domain` entidades JPA
-- `src/main/java/dev/zenetodev/fightclub/dto` contratos de entrada/saída
-- `src/main/java/dev/zenetodev/fightclub/specification` filtros dinâmicos
-- `src/main/resources/db/migration` migrations Flyway
-- `src/test` testes
+- `src/main/java/dev/zenetodev/fightclub/config`: configuração (OpenAPI)
+- `src/main/java/dev/zenetodev/fightclub/controller`: endpoints REST
+- `src/main/java/dev/zenetodev/fightclub/service`: regras de negócio
+- `src/main/java/dev/zenetodev/fightclub/repository`: acesso a dados
+- `src/main/java/dev/zenetodev/fightclub/domain`: entidades JPA
+- `src/main/java/dev/zenetodev/fightclub/dto`: contratos de entrada/saída
+- `src/main/java/dev/zenetodev/fightclub/specification`: filtros dinâmicos
+- `src/main/resources/db/migration`: migrations Flyway
+- `src/test`: testes
 
 ## Banco de dados
 As migrations Flyway estão em:
