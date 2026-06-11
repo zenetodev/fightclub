@@ -1,0 +1,136 @@
+@baseUrl = http://localhost:8080
+
+### Cadastrar Aluno
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+    "nome": "Vanessa Oliveira",
+    "dataNascimento": "2002-08-15",
+    "sexo": "F",
+    "telefone": "4833334444",
+    "celular": "48991645543",
+    "email": "vanessaoli@gmail.com",
+    "observacao": "Aluna Ja possui boa avaliacao",
+    "endereco": "Rua das flores",
+    "numero": "123",
+    "complemento": "Apartamento 202",
+    "bairro": "Centro",
+    "cidade": "Criciuma",
+    "estado": "SC",
+    "cep": "8880"
+}
+
+### Listar alunos
+GET {{baseUrl}}/alunos
+
+### Listar alunos com paginaçao
+GET {{baseUrl}}/alunos?page=0&size=10&sort=nome,asc
+
+### Buscar alunos por ID
+GET {{baseUrl}}/alunos/1
+
+### Atualizar aluno
+PUT {{baseUrl}}/alunos/1
+Content-Type: application/json
+
+{
+  "nome": "João da Silva Atualizado",
+  "dataNascimento": "1995-08-15",
+  "sexo": "M",
+  "telefone": "4833334444",
+  "celular": "48991645543",
+  "email": "joao@gmail.com",
+  "observacao": "Aluno iniciante",
+  "endereco": "Rua das flores",
+  "numero": "123",
+  "complemento": "Apartamento 202",
+  "bairro": "Centro",
+  "cidade": "Criciuma",
+  "estado": "SC",
+  "cep": "8880"
+}
+
+### Excluir aluno
+DELETE {{baseUrl}}/alunos/1
+
+### Cadastrar Aluno
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+  "nome": "Maria Oliveira",
+  "dataNascimento": "1998-03-22",
+  "sexo": "F",
+  "telefone": "4833334444",
+  "celular": "48991645543",
+  "email": "joao@gmail.com",
+  "observacao": "Aluno iniciante",
+  "endereco": "Rua das flores",
+  "numero": "123",
+  "complemento": "Apartamento 202",
+  "bairro": "Centro",
+  "cidade": "Criciuma",
+  "estado": "SC",
+  "cep": "8880"
+}
+
+### Cadastrar um aluno invalido
+
+### Cadastrar Aluno
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+  "nome": "",
+  "dataNascimento": "1998-03-22",
+  "sexo": "F",
+  "telefone": "4833334444",
+  "celular": "48991645543",
+  "email": "",
+  "observacao": "Aluno iniciante",
+  "endereco": "Rua das flores",
+  "numero": "123",
+  "complemento": "Apartamento 202",
+  "bairro": "Centro",
+  "cidade": "Criciuma",
+  "estado": "SC",
+  "cep": "8880"
+}
+
+### Listar todos
+GET {{baseUrl}}/alunos?page=0&size=10&sort=nome,asc
+
+### Listar por nome
+GET {{baseUrl}}/alunos?nome=joao&page=0&size=10&sort=nome,asc
+
+### Listar por cidade
+GET {{baseUrl}}/alunos?cidade=Criciuma&page=0&size=10&sort=nome,asc
+
+### Listar por estado
+GET {{baseUrl}}/alunos?estado=SC&page=0&size=10&sort=nome,asc
+
+### Listar por email
+GET {{baseUrl}}/alunos?email=joao@gmail.com&page=0&size=10&sort=nome,asc
+
+
+
+### Faturamento mensal
+GET {{baseUrl}}/relatorios/faturamento-mensal
+
+### Alunos por cidade
+GET {{baseUrl}}/relatorios/alunos-por-cidade
+
+### Faturas em aberto
+GET {{baseUrl}}/relatorios/faturas-em-aberto
+
+
+
+
+
+
+
+
+
+
+
